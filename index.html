@@ -8,6 +8,82 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 215, 0, 0.6);
+            border-radius: 50%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(255, 215, 0, 0.9);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(66%) sepia(83%) saturate(2500%) hue-rotate(360deg) brightness(95%) contrast(100%);
+        }
+
+        .navbar {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            background-color: gray !important;
+        }
+
+        .navbar .navbar-brand svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            margin-left: 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-link:hover {
+            color: gold !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 215, 0, 0.6);
+            border-radius: 50%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(255, 215, 0, 0.9);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(66%) sepia(83%) saturate(2500%) hue-rotate(360deg) brightness(95%) contrast(100%);
+        }
+    </style>
+</head>
+
+
+<body>
 
     <div class="container-fluid">
 
@@ -29,23 +105,13 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-</head>
 
-<body>
+
     <div class=" container my-5">
 
         <h1>
@@ -159,7 +225,18 @@
 
     </ul>
 
-
+    <footer id="footer" class="text-center text-white py-4 mt-5" style="background-color:#000;">
+        <div class="container">
+            <h5 class="mb-3">Apple Inc. © 2025</h5>
+            <p class="mb-2">Designed with ❤️ by Apple Fans Worldwide</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+                <a href="#features" class="text-white text-decoration-none">Features</a>
+                <a href="#video" class="text-white text-decoration-none">Video</a>
+                <a href="#top" class="text-white text-decoration-none">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
 
 
 
